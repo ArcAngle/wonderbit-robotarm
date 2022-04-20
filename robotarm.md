@@ -60,3 +60,5 @@ input.onButtonPressed(Button.B, function () {
 pins.digitalWritePin(DigitalPin.P1, 0)	
 })
 ```
+
+Trykk på knappen A vil vise med rødt at det er nå strøm på Pinne 1, når man trykker på knapp B så vil den bli vanlig og av, det vil si at den er uten strøm på
