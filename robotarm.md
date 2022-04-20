@@ -13,7 +13,7 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
-En for knapp A og en for knapp B, disse skal vi bruke til å slå den av og på med, vi vil da ha denne koden
+En for pins.digitalWritePin(DigitalPin.P0, 0) og en for ``||input:når knapp B trykkes||``, disse skal vi bruke til å slå den av og på med, vi vil da ha denne koden
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -24,54 +24,25 @@ input.onButtonPressed(Button.B, function () {
 	
 })
 ```
+### Legge til hendelse når knappene trykkes
+Her skal vi bruke noe som kalles servoportene, det er de gullfargede kantene nederst på micro:bit kortet, markert med 0,1 og 2, vi skal bruke port/Pinne nr 1,
+hvis du husker fra byggingen så er det denne vi koblet lysdioden til, ved hjelp av krokodille klemmer.
 
+Vi må da gå til ``||advanced:Avansert nederst i menyen ||`` der finner du ``||pins:Tilkoblinger ||``
+
+Vi trenger to av blokken under også, en i knapp A og en i knapp B
+
+```cards
+pins.digitalWritePin(DigitalPin.P0, 0)
+```
+<br />
+Vi må nå sette denne til P1 som vist under
+```blocks
+input.onButtonPressed(Button.A, function () {
+pins.digitalWritePin(DigitalPin.P1, 1)	
+})
 
 input.onButtonPressed(Button.B, function () {
-    pins.digitalWritePin(DigitalPin.P2, 0)
-    servo1 = 45
+pins.digitalWritePin(DigitalPin.P1, 0)	
 })
-let servo1 = 0
-WonderBit.Initialise()
-servo1 = 45
-basic.showIcon(IconNames.Yes)
-basic.pause(1000)
-basic.clearScreen()
-basic.forever(function () {
-    WonderBit.Servo(servo1, servo1)
-    if (input.buttonIsPressed(Button.A) || input.soundLevel() >= 125) {
-        pins.digitalWritePin(DigitalPin.P2, 1)
-        for (let index = 0; index < 6; index++) {
-            servo1 = 80
-            basic.showLeds(`
-                . . . . .
-                . # . # .
-                . . # . .
-                . # . # .
-                . . . . .
-                `)
-            basic.pause(1000)
-            servo1 = 10
-            basic.showLeds(`
-                # . . . #
-                . # . # .
-                . . # . .
-                . # . # .
-                # . . . #
-                `)
-            basic.pause(250)
-            basic.showLeds(`
-                . . . . .
-                . . . . .
-                . . # . .
-                . . . . .
-                . . . . .
-                `)
-            basic.pause(750)
-        }
-        basic.clearScreen()
-    } else {
-        pins.digitalWritePin(DigitalPin.P2, 0)
-        servo1 = 45
-    }
-})
-
+```
