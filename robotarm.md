@@ -62,3 +62,6 @@ pins.digitalWritePin(DigitalPin.P1, 0)
 ```
 
 Trykk på knappen A vil vise med rødt at det er nå strøm på Pinne 1, når man trykker på knapp B så vil den bli vanlig og av, det vil si at den er uten strøm på
+
+// kun for å generere bilder og snippets riktig, må være med i dokumentet
+<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
