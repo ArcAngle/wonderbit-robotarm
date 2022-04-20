@@ -2,6 +2,30 @@
 
 
 ## Vi begynner med lysbrytere
+
+Det første vi gjør er å bruke knapp A og B til å slå lyset av og på 
+
+Vi trenger da to blokker fra ``||input:Inndata||``, som vist under
+
+```cards
+input.onButtonPressed(Button.A, function () {
+	
+})
+```
+
+En for knapp A og en for knapp B, disse skal vi bruke til å slå den av og på med, vi vil da ha denne koden
+
+```blocks
+input.onButtonPressed(Button.A, function () {
+	
+})
+
+input.onButtonPressed(Button.B, function () {
+	
+})
+```
+
+
 input.onButtonPressed(Button.B, function () {
     pins.digitalWritePin(DigitalPin.P2, 0)
     servo1 = 45
