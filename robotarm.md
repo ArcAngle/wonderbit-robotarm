@@ -1,7 +1,7 @@
 # WonderKit by MakeKit - Robotarm
 
 
-## Vi begynner med lysbrytere
+## Vi begynner med lysbryter
 
 Det første vi gjør er å bruke knapp A og B til å slå lyset av og på 
 
