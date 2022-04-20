@@ -11,7 +11,7 @@
         "main.ts",
         "README.md",
         "custom.ts",
-        "robotarm.ts"
+        "robotarm.md"
     ],
     "testFiles": [
         "test.ts"
