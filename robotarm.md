@@ -46,3 +46,17 @@ input.onButtonPressed(Button.B, function () {
 pins.digitalWritePin(DigitalPin.P1, 0)	
 })
 ```
+
+## Bruke simulatoren i makecode for å se at dette fungerer
+
+La oss teste koden
+
+```sim
+input.onButtonPressed(Button.A, function () {
+pins.digitalWritePin(DigitalPin.P1, 1)	
+})
+
+input.onButtonPressed(Button.B, function () {
+pins.digitalWritePin(DigitalPin.P1, 0)	
+})
+```
