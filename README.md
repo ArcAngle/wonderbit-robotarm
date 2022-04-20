@@ -1,6 +1,11 @@
 
 > Åpne denne siden på [https://arcangle.github.io/wonderbit-robotarm/](https://arcangle.github.io/wonderbit-robotarm/)
 
+## Her finner man testene
+
+[Lysdiode test](/robotarm.md)
+
+
 ## Bruk som utvidelse
 
 Dette kodeområdet kan bli lagt til som en **utvidelse** i MakeCode.
