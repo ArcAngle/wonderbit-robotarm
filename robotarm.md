@@ -63,6 +63,14 @@ pins.digitalWritePin(DigitalPin.P1, 0)
 
 Trykk på knappen A vil vise med rødt at det er nå strøm på Pinne 1, når man trykker på knapp B så vil den bli vanlig og av, det vil si at den er uten strøm på
 
+## Her tester vi WonderBit tillegget
+
+Det må kunne gå ann å få med koden her vel?
+```blocks
+basic.forever(function () {
+    WonderBit.Servo(servo1, servo1)
+})
+```
 
 ### Se bort fra teksten under her
 // kun for å generere bilder og snippets riktig, må være med i dokumentet
